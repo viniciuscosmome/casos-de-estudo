@@ -1,0 +1,105 @@
+$white: #f4f4f4;
+$dark: #222222;
+$green-light: #69FF89;
+$green: #1cff4f;
+$green-dark: #16CC3E;
+$blue-light: #7588FF;
+$blue: #2947FF;
+$blue-dark: #2137CC;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: $dark;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+
+    background-color: $white;
+}
+
+.main {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    .title {
+        padding: 14px 0;
+        margin-bottom: 14px;
+    }
+
+    .navigation {
+        width: 20%;
+        padding: 0 7px;
+    }
+
+    .select {
+        display: block;
+        padding: 7px 14px;
+        margin: 7px 0;
+
+        color: $white;
+        font-weight: 700;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $dark;
+        border-radius: 5px;
+        background-color: $dark;
+
+        cursor: pointer;
+    }
+
+    .preview {
+        width: 70%;
+        padding: 0 7px;
+
+        .subtitle {
+            margin: 14px 0;
+        }
+
+        [data-preview]::before {
+            content: attr(data-preview);
+        }
+
+        .entry {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 0;
+
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 2px solid $blue;
+            border-radius: 5px;
+            background: linear-gradient(90deg, $blue-dark, $blue);
+            box-shadow: 0 0 7px transparentize(#000000, 0.7);
+            cursor: pointer;
+        }
+
+        i {
+            color: white;
+            font-size: small;
+        }
+
+        .iframe {
+            margin: 28px 0;
+            width: 100%;
+            height: 49vh;
+
+            border-radius: 5px;
+            box-shadow: 0 0 7px transparentize(#000000, 0.7);
+        }
+    }
+
+}
