@@ -98,6 +98,7 @@
   width: 100%;
   height: 49vh;
   border-radius: 5px;
+  pointer-events: none;
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }

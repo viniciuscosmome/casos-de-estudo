@@ -98,6 +98,7 @@ $blue-dark: #2137CC;
             height: 49vh;
 
             border-radius: 5px;
+            pointer-events: none;
             box-shadow: 0 0 7px transparentize(#000000, 0.7);
         }
     }
