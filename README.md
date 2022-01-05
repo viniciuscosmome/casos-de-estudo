@@ -7,3 +7,4 @@
 ### Abaixo deixarei uma lista com o link direto de cada desafio:
 
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_01/">Desafio 01</a>
+* <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_02/">Desafio 02</a>
