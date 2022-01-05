@@ -1,3 +1,9 @@
 ## Completanto desafios do <a href="https://github.com/iuricode">@iuricode</a>
 
-O arquivo index.html principal contém uma lista de todos os desafios concluídos, você pode estar conferindo através desse link: <a href="https://viniciuscosmome.github.io/iuri_code_desafios">DESAFIOS</a>
+> Acesse a lista completa dos desafios concluídos <a href="https://viniciuscosmome.github.io/iuri_code_desafios" target="_blank">clicando aqui</a>
+
+---
+
+### Abaixo deixarei uma lista com o link direto de cada desafio:
+
+* <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_01/">Desafio 01</a>

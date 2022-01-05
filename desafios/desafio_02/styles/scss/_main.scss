@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $font-family-montserrat;
+}
+
+html {
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.news {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.05rem;
+    color: $white;
+    font-size: small;
+    background-color: $black-light;
+}
+
+.header {
+    padding: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $white;
+
+    &-link {
+        letter-spacing: 0.05rem;
+        color: $black-light;
+        font-size: xx-large;
+    }
+}
+
+.banner {
+    position: relative;
+    padding: 0 14%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: start;
+
+    background-image: url('../../images/pexels-jd-danny-2385477.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position-y: 50%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+
+        background-color: transparentize($black-light, 0.63);
+    }
+
+    &-title,
+    &-paragraph {
+        padding: 14px 0;
+        width: 100%;
+        z-index: 1;
+
+        color: $white;
+    }
+
+    &-title {
+        font-size: x-large;
+    }
+
+    &-paragraph {
+        line-height: 28px;
+    }
+}
+
+.main {
+    padding: 14px 0;
+
+    &-title,
+    &-paragraph {
+        padding: 14px 0 7px;
+        text-align: center;
+    }
+
+    &-title {
+        margin-top: 14px;
+
+        font-size: x-large;
+    }
+
+    &-paragraph {
+        margin-bottom: 14px;
+
+        font-size: large;
+        font-weight: 500;
+        color: $gray;
+    }
+
+    &-section {
+        padding: 2rem 14%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .product-card {
+        padding: 5%;
+        margin: 1rem 0 2rem;
+        width: 23%;
+
+        background-color: $white-200;
+        transition: width .2s ease-in-out;
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    padding: 14px;
+
+    color: $white;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    background-color: $black-light;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        .product-card {
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .small-hidden {
+        position: fixed;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .banner {
+        padding: 0 10%;
+    }
+
+    .main {
+
+        &-title,
+        &-paragraph,
+        &-section {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+
+        .product-card {
+            width: 100%;
+        }
+
+    }
+}
