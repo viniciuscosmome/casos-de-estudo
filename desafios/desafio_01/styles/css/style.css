@@ -3,6 +3,7 @@
   position: fixed;
   bottom: 14px;
   left: 7px;
+  z-index: 1000050;
 }
 
 .return-to-home span {
@@ -24,7 +25,6 @@
   left: 105%;
   border-radius: 5px;
   padding: 7px 0;
-  z-index: -1;
   width: 0;
   overflow-x: hidden;
   white-space: nowrap;
