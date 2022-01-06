@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $font-family-lato;
+}
+
+html {
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+
+    &-left,
+    &-right {
+        width: 50%;
+        transition: width .2s ease-in-out;
+    }
+
+    &-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $white-200;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.login {
+    margin: auto 0;
+
+    &-welcome,
+    &-title {
+        font-family: $font-family-merriweather;
+    }
+
+    &-title {
+        padding-bottom: 14px;
+    }
+
+    &-input {
+        margin: 14px 0;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 7px;
+        }
+
+        input {
+            padding: 7px 14px;
+            border-radius: 5px;
+            border: 1px solid lighten(#000000, 70);
+            outline-color: $purple-light;
+        }
+    }
+
+    &-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: small;
+
+        a {
+            color: $purple-light;
+
+            transition: color .2s ease-in-out;
+
+            &:hover {
+                color: darken($purple-light, 14);
+            }
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-submit,
+    &-google {
+        padding: 14px;
+        margin: 7px 0;
+        border-radius: 5px;
+        border: none;
+
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &-submit {
+        margin-top: 14px;
+
+        color: $white;
+        font-size: medium;
+        font-weight: 600;
+        background-color: $green-light;
+    }
+
+    &-google {
+        margin-bottom: 14px;
+
+        color: $white;
+        font-size: medium;
+        font-weight: 600;
+        background-color: $gray;
+    }
+}
+
+.register {
+    padding: 14px 0;
+
+    a {
+        color: $purple-light;
+
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: darken($purple-light, 14);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        &-left{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-100%);
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
+        &-right {
+            width: 100%;
+        }
+    }
+}
