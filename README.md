@@ -9,3 +9,4 @@
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_01/">Desafio 01</a>
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_02/">Desafio 02</a>
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_03/">Desafio 03</a>
+* <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_04/">Desafio 04</a>
