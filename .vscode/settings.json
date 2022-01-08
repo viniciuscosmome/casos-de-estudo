@@ -9,6 +9,13 @@
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
         ".vscode/**",
-        "global_resources/**"
+        "global_resources/**",
+
+        "desafios/desafio_01/**",
+        "desafios/desafio_02/**",
+        "desafios/desafio_03/**",
+        "desafios/desafio_04/**",
+        "desafios/desafio_05/**",
+        "desafios/desafio_06/**"
     ]
 }
