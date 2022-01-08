@@ -1,6 +1,6 @@
 function checkURL() {
-    let params = (new URL(document.location)).searchParams
-    let reference = params ? params.get("ref").replace(/[^a-z]/gi, '') : ''
+    let params = (new URL(document.location)).searchParams.get("ref")
+    let reference = params ? params.replace(/[^a-z]/gi, '') : ''
 
     if (!!reference && reference === 'mdl')
         document.querySelector('.return-to-home').remove()
