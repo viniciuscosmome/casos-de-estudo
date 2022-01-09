@@ -12,3 +12,4 @@
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_04/">Desafio 04 - tela de login</a>
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_05/">Desafio 05 - a viagem de Chihiro</a>
 * <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_06/">Desafio 06 - LOKI</a>
+* <a href="https://viniciuscosmome.github.io/iuri_code_desafios/desafios/desafio_07/">Desafio 07 - Valorant</a>
