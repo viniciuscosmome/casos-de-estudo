@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.return-to-home {
+  position: fixed;
+  bottom: 14px;
+  left: 7px;
+  z-index: 1000050;
+  text-decoration: none;
+}
+
+.return-to-home span {
+  position: relative;
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: white;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#DB0731), to(#f40735));
+  background: linear-gradient(90deg, #DB0731, #f40735);
+  cursor: pointer;
+}
+
+.return-to-home span::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 0;
+  left: 105%;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+  background-color: #f40735;
+  -webkit-transition: width .2s ease-in-out, padding .2s ease-in-out;
+  transition: width .2s ease-in-out, padding .2s ease-in-out;
+}
+
+.return-to-home:hover span::before {
+  width: 100%;
+  padding: 7px 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "B612", sans-serif;
+}
+
+.cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-image: url("../../images/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.86);
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  padding: 5rem 10%;
+  color: #ffffff;
+}
+
+.container-text, .container-title {
+  padding: 14px 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-title {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-folder {
+  max-width: 100%;
+  width: 200px;
+}
+
+.article-about {
+  padding: 0 14px;
+  max-width: 600px;
+}
+
+.article-description {
+  margin-bottom: 14px;
+  text-align: justify;
+}
+
+.article-details {
+  padding: 14px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-stars {
+  color: #ffa800;
+}
+
+.article-buttons {
+  margin-top: 14px;
+}
+
+.article-buttons a {
+  padding: 14px;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #0072d2;
+  background-color: #0072d2;
+}
+
+.article-buttons a:nth-of-type(2) {
+  border-color: #ffffff;
+  background-color: #131318;
+}
+
+.article-buttons a + a {
+  margin: 14px;
+}
+
+@media (max-width: 768px) {
+  .container-title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article-folder {
+    margin-bottom: 2rem;
+    width: 250px;
+  }
+  .article-about {
+    width: 100%;
+  }
+  .article-buttons a {
+    text-align: center;
+    width: 100%;
+  }
+  .article-buttons a + a {
+    margin: 7px 0;
+  }
+}
+
+@media (max-width: 368px) {
+  .container-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article-folder {
+    margin-bottom: 2rem;
+    width: 250px;
+  }
+  .article-about {
+    width: 100%;
+  }
+  .article-description {
+    text-align: center;
+  }
+  .article-details {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article-time, .article-stars, .article-year {
+    padding: 7px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .article-buttons a {
+    text-align: center;
+    width: 100%;
+  }
+  .article-buttons a + a {
+    margin: 7px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

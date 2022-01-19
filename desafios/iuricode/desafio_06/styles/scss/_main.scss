@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $font-family-b612;
+}
+
+.cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+
+    background-image: url('../../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-color: rgba(0, 0, 0, 0.86);
+    }
+}
+
+.container {
+    position: absolute;
+    inset: 0;
+    padding: 5rem 10%;
+
+    color: $white;
+
+    &-text,
+    &-title {
+        padding: 14px 0;
+        width: 100%;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        font-size: 5rem;
+
+        margin-bottom: 3rem;
+    }
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+
+    &-folder {
+        max-width: 100%;
+        width: 200px;
+    }
+
+    &-about {
+        padding: 0 14px;
+        max-width: 600px;
+    }
+
+    &-description {
+        margin-bottom: 14px;
+
+        text-align: justify;
+    }
+
+    &-details {
+        padding: 14px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-stars {
+        color: $yellow;
+    }
+
+    &-buttons {
+        margin-top: 14px;
+
+        a {
+            padding: 14px;
+            display: inline-block;
+
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid $blue;
+            background-color: $blue;
+
+            &:nth-of-type(2) {
+                border-color: $white;
+                background-color: $dark;
+            }
+        }
+
+        a + a {
+            margin: 14px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        &-title {
+            font-size: 5rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+
+    .article {
+        flex-wrap: wrap;
+
+        &-folder {
+            margin-bottom: 2rem;
+            width: 250px;
+        }
+
+        &-about {
+            width: 100%;
+        }
+
+        &-buttons {
+            a {
+                text-align: center;
+                width: 100%;
+            }
+            a + a {
+                margin: 7px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 368px) {
+    .container {
+        &-title {
+            font-size: 4rem;
+
+            margin-bottom: 1rem;
+        }
+    }
+
+    .article {
+        flex-wrap: wrap;
+
+        &-folder {
+            margin-bottom: 2rem;
+            width: 250px;
+        }
+
+        &-about {
+            width: 100%;
+        }
+
+        &-description {
+            text-align: center;
+        }
+
+        &-details {
+            flex-wrap: wrap;
+        }
+
+        &-time,
+        &-stars,
+        &-year {
+            padding: 7px 0;
+            width: 100%;
+
+            text-align: center;
+        }
+
+        &-buttons {
+            a {
+                text-align: center;
+                width: 100%;
+            }
+            a + a {
+                margin: 7px 0;
+            }
+        }
+    }
+}

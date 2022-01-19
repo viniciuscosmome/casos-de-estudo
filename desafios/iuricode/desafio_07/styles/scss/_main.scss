@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: $white;
+    font-family: $font-family-opensans;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid $red;
+    }
+
+    &::before {
+        width: calc(100% - 60px);
+        height: 100%;
+        margin: 0 28px;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    &::after {
+        width: 100%;
+        height: calc(100% - 32px);
+        margin: 14px 0;
+        border-right: 0;
+        border-left: 0;
+    }
+}
+
+.app {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px 0;
+    overflow-y: auto;
+}
+
+.header {
+    padding: 7px 5%;
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-logo {
+        max-width: 60px;
+    }
+
+    &-title {
+        font-weight: 600;
+    }
+
+    &-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            margin: 0 7px;
+        }
+    }
+}
+
+.main {
+    padding: 0 5%;
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-right {
+        width: 40%;
+    }
+
+    &-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    &-title {
+        padding: 28px 0;
+        width: 100%;
+
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &-perfil {
+        padding: 14px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &-character img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 90%;
+        max-height: 100%;
+    }
+}
+
+.profile {
+    margin: 7px 14px;
+
+    &:nth-of-type(1) &-image::after {
+        background-image: url('../../images/perfil_01.png');
+    }
+
+    &:nth-of-type(2) &-image::after {
+        background-image: url('../../images/perfil_02.png');
+    }
+
+    &:nth-of-type(3) &-image::after {
+        background-image: url('../../images/perfil_03.png');
+    }
+
+    &-image {
+        position: relative;
+        min-width: 170px;
+        min-height: 170px;
+        max-width: 170px;
+        max-height: 170px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+
+            clip-path: polygon(
+                0 20px,
+                20px 0,
+                100% 0,
+                100% 100%,
+                0 100%
+            );
+        }
+
+        &::before {
+            z-index: -2;
+
+            background-color: $white;
+        }
+
+        &::after {
+            margin: 3px;
+            z-index: -2;
+
+            background-color: $red;
+        }
+
+        .outline::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -3;
+            transform: translate(-10px, -10px);
+
+            background-color: $white;
+
+            clip-path: polygon(
+                0 11.76%,
+                11.76% 0,
+                100% 0,
+                100% 50%,
+                98% 50%,
+                98% 2%,
+                12% 2%,
+                2% 12%,
+                2% 98%,
+                50% 98%,
+                50% 100%,
+                0 100%
+            );
+        }
+    }
+
+    &-text {
+        padding: 7px 0;
+
+        color: $red;
+        text-align: center;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 968px) {
+    .main {
+        &-left {
+            width: 100%;
+        }
+
+        &-right {
+            display: none;
+        }
+    }
+}
