@@ -11,12 +11,12 @@
         ".vscode/**",
         "global_resources/**",
 
-        "desafios/desafio_01/**",
-        "desafios/desafio_02/**",
-        "desafios/desafio_03/**",
-        "desafios/desafio_04/**",
-        "desafios/desafio_05/**",
-        "desafios/desafio_06/**",
-        "desafios/desafio_07/**"
+        "desafios/iuricode/desafio_01/**",
+        "desafios/iuricode/desafio_02/**",
+        "desafios/iuricode/desafio_03/**",
+        "desafios/iuricode/desafio_04/**",
+        "desafios/iuricode/desafio_05/**",
+        "desafios/iuricode/desafio_06/**",
+        "desafios/iuricode/desafio_07/**"
     ]
 }
