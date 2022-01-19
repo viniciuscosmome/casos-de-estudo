@@ -5,8 +5,8 @@ let getEntryButton = document.querySelector('.entry')
 function changePreview() {
     let reference = this.getAttribute('data-href')
 
-    getIframe.setAttribute('src', `desafios/desafio_${reference}`)
-    getEntryButton.setAttribute('href', `desafios/desafio_${reference}`)
+    getIframe.setAttribute('src', `desafios/iuricode/desafio_${reference}`)
+    getEntryButton.setAttribute('href', `desafios/iuricode/desafio_${reference}`)
 
     changeButtonActive(this)
 }
