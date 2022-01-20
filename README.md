@@ -2,7 +2,7 @@
 ### Listarei os links para cada desafio que finalizo
 <br />
 
-> criador: <a href="https://github.com/iuricode">@iuricode</a><br />
+> criador dos desafios: <a href="https://github.com/iuricode">@iuricode</a><br />
 > pasta dos desafios: desafios/iuricode
 * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_01/">Desafio 01 - blog codelândia</a>
 * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_02/">Desafio 02 - loja JordanShoes</a>
