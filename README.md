@@ -11,3 +11,4 @@
 * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_05/">Desafio 05 - a viagem de Chihiro</a>
 * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_06/">Desafio 06 - LOKI</a>
 * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_07/">Desafio 07 - Valorant</a>
+* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_11/">Desafio 11 - Jogo da Memória</a>
