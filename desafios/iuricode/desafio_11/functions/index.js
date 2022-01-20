@@ -33,6 +33,7 @@ const shuffle = function(array) {
 }
 
 const gameFinished = function() {
+    const levelSelect = document.getElementById('level-select-display')
     let container = document.querySelector('.game-finished')
 
     let fullTime = Date.now() - currentLevelStatus.startTime
@@ -42,8 +43,9 @@ const gameFinished = function() {
 
     currentLevelStatus.gameStatus = false
 
-    container.querySelector('.time span').innerHTML = formatTime(minutes, seconds)
-    container.querySelector('.move span').innerHTML = currentLevelStatus.moveCount
+    container.querySelector('.level span').innerText = levelSelect.querySelector('span').innerText
+    container.querySelector('.time span').innerText = formatTime(minutes, seconds)
+    container.querySelector('.move span').innerText = currentLevelStatus.moveCount
 
     document.getElementById('continue').addEventListener('click', function() {
         container.classList.remove('show')
@@ -85,7 +87,8 @@ const gameInitConfig = function() {
 const activeBonus = function(evt) {
     if (!this.className.includes('available') ||
         !evt.isTrusted ||
-        !currentLevelStatus.gameStatus
+        !currentLevelStatus.gameStatus ||
+        currentLevelStatus.moveCount < 10
     ) return
 
     --currentLevelStatus.jokerFound
