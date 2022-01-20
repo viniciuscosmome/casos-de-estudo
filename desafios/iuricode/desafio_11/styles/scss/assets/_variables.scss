@@ -1,0 +1,15 @@
+
+$yellow: #ee9430;
+$yellow-light: #ecc839;
+
+$red: #2b0e11;
+$dark: #15181F;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family: 'October Crow';
+    src: url('../font/OctoberCrow.ttf');
+}
+
+$font-family-openSans: 'Open Sans', sans-serif;
+$font-family-octoberCrow: 'October Crow', sans-serif;

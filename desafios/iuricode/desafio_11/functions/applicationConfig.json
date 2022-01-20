@@ -1,0 +1,36 @@
+{
+    "GameLevel": {
+        "0": {
+            "numberOfCards": 18,
+            "joker": [2, 3],
+            "jokerTime": 5e3,
+            "untap": 5e3
+        },
+        "1": {
+            "numberOfCards": 36,
+            "joker": [1, 3],
+            "jokerTime": 4e3,
+            "untap": 4e3
+        },
+        "2": {
+            "numberOfCards": 54,
+            "joker": [1, 2],
+            "jokerTime": 3e3,
+            "untap": 3e3
+        }
+    },
+
+    "GameImages": [
+        "book.png",
+        "coffin.png",
+        "eye.png",
+        "hat.png",
+        "pumpkin.png",
+        "scarecows.png",
+        "ted.png",
+        "witch.png",
+        "zoombie.png"
+    ],
+
+    "JokerImage": "crown.png"
+}
