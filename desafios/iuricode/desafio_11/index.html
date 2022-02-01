@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#2b0e11">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 11</title>
     <!-- Icons -->
@@ -61,16 +62,16 @@
                         <i class="icofont-rounded-down"></i>
                     </div>
 
-                    <div class="select-options">
-                        <div value="0" class="select-item">
+                    <div id="level-select-buttons" class="select-options">
+                        <div class="select-item">
                             Iniciante
                         </div>
 
-                        <div value="1" class="select-item">
+                        <div class="select-item">
                             Padrão
                         </div>
 
-                        <div value="2" class="select-item monster-level">
+                        <div class="select-item">
                             Monstro
                         </div>
                     </div>
@@ -175,22 +176,6 @@
                 </p>
             </div>
         </fieldset>
-
-        <!-- Feature -->
-        <!-- <fieldset class="game-rules">
-            <legend>
-                Extra
-            </legend>
-
-            <div>
-                <h3>
-                    Salvamento
-                </h3>
-                <p>
-                    Sua pontuação pode ser salva ao final da partida, ela estará disponível somente no navegador da internet onde foi salva. Você pode excluir os dados a qualquer momento acessando os jogos salvos no menu principal.
-                </p>
-            </div>
-        </fieldset> -->
     </main>
 
     <div id="game-finished" class="game-finished">
@@ -209,12 +194,6 @@
         </p>
 
         <div class="display">
-            <div class="level">
-                Nível:
-                <span>
-                </span>
-            </div>
-
             <div class="time">
                 Tempo:
                 <span>
@@ -235,6 +214,16 @@
         </button>
     </div>
 
-    <script type="text/javascript" src="functions/index.js"></script>
+    <script type="text/javascript" src="functions/helpers.js"></script>
+    <script type="text/javascript" src="functions/engine/jobs.js"></script>
+    <script type="text/javascript" src="functions/engine/render.js"></script>
+    <script type="text/javascript" src="functions/engine/control.js"></script>
+    <script type="text/javascript" src="functions/engine/index.js"></script>
+
+    <script type="text/javascript" src="functions/controller/resources.js"></script>
+    <script type="text/javascript" src="functions/controller/bonusConfig.js"></script>
+    <script type="text/javascript" src="functions/controller/cardConfig.js"></script>
+    <script type="text/javascript" src="functions/controller/services.js"></script>
+    <script type="text/javascript" src="functions/controller/index.js"></script>
 </body>
 </html>
