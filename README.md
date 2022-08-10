@@ -6,7 +6,7 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 <br /><br />
 
 ### Veja todos os projetos em:
-[GitHub Pages]("https://viniciuscosmome.github.io/casos-de-estudo/")
+[GitHub Pages](https://viniciuscosmome.github.io/casos-de-estudo/)
 <br /><br />
 
 ### Navegar pelo README.md
