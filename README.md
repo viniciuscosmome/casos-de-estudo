@@ -17,14 +17,14 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 
 # Blog Codelândia
 >[![Blog Codelândia](assets/images/blog_codelandia.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/blog_codelandia/)
-<sup  align="center">Clique na imagem acima para visualizar o template na web</sup>
+<sup  align=center>Clique na imagem acima para visualizar o template na web</sup>
 
-<table>
+<table align=center>
     <thead>
         <tr>
             <th>Designer do tema</th>
-            <th>Ícone</th>
-            <th>Fonte</th>
+            <th>Ícones</th>
+            <th>Fontes</th>
         </tr>
     </thead>
     <tbody>
@@ -35,20 +35,18 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
         </tr>
     </tbody>
 </table>
-<br />
-<br />
+<br /><br />
 
 # Notícias Naped
 >[![Notícias Naped](assets/images/noticias_naped.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/noticias_naped/)
-<sup  align="center">Clique na imagem acima para visualizar o template na web</sup>
+<sup align=center>Clique na imagem acima para visualizar o template na web</sup>
 
-## Créditos
-<table>
+<table align=center>
     <thead>
         <tr>
             <th>Designer do tema</th>
-            <th>Ícone</th>
-            <th>Fonte das letras</th>
+            <th>Ícones</th>
+            <th>Fontes</th>
         </tr>
     </thead>
     <tbody>
@@ -59,20 +57,20 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
         </tr>
     </tbody>
 </table>
-<br />
-<br />
+<br /><br />
 
 <hr />
+<br /><br />
 
 <table>
     <thead>
         <tr>
-            <th align="center">Autor</th>
+            <th align=center>Autor</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td align="center">
+            <td align=center>
                 <a href="https://github.com/viniciuscosmome">
                     <img
                         width="125"
@@ -82,20 +80,25 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
             </td>
         </tr>
         <tr>
-            <td align="center">
+            <td align=center>
                 <a
                     href="https://github.com/viniciuscosmome"
                     style="color: rgb(15, 110, 232);">
-                    <strong>@viniciuscosmo</strong>
+                    <strong>@viniciuscosmome</strong>
                 </a>
             </td>
         </tr>
     </tbody>
 </table>
 
-<br>
-<br>
+<br><br>
 
-<sub align="center">Gostou do repositório? Dá uma ⭐.</sub>
+<hr />
 
-<sub align="center"><strong>© 2022 Vinicius Cosmo</strong></sub>
+<p align=center>
+    Gostou do repositório? Dá uma ⭐
+    <br />
+    <sub>
+        <strong>&copy; 2022 Vinicius Cosmo</strong>
+    </sub>
+</p>
