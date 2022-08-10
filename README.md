@@ -98,4 +98,4 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 
 <sub align="center">Gostou do repositório? Dá uma ⭐.</sub>
 
-<sub align="center"><strong>© 2021 Vinicius Cosmo</strong></sub>
+<sub align="center"><strong>© 2022 Vinicius Cosmo</strong></sub>
