@@ -1,0 +1,8 @@
+@media (max-width: 1400px) {
+    @include variables_max_width_1400;
+}
+
+@media (max-width: 568px) {
+    @include variables_max_width_568;
+    @include header_max_width_568;
+}

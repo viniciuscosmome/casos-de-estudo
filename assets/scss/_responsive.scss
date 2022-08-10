@@ -1,0 +1,13 @@
+@media (max-width: 1400px) {
+    @include variables_max_1400;
+    @include style_max_1400;
+}
+
+@media (max-width: 720px) {
+    @include variables_max_720;
+    @include style_max_720;
+}
+
+@media (max-width: 568px) {
+    @include style_max_568;
+}

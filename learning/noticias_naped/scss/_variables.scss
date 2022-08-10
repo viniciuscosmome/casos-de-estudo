@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --padding: 0 7rem;
+}
+
+$padding: var(--padding);
+
+$inter:                 'Inter', sans-serif;
+$lexend:                'Lexend Deca', sans-serif;
+
+$purple-light:          #8257E6;
+$white:                 #FEFBFB;
+$white-200:             #c4c4c4;
+$gray-200:              #282830;
+$dark:                  #13131f;
+$black:                 #0d0d11;
+
+$gradient-vertical: linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%);
+
+$box-shadow:            0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm:         0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg:         0 1rem 3rem rgba($black, .175);
+
+// Mixins
+@mixin display-flex-wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+// Responsive
+@mixin variables-max-1200 {
+    :root {
+        --padding: 0 3rem;
+    }
+}
+
+@mixin variables-max-768 {
+    :root {
+        --padding: 0 1rem;
+    }
+}

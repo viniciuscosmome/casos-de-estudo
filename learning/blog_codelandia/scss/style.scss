@@ -1,0 +1,31 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $lexend;
+}
+
+body {
+    background-color: $white_200;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header,
+.main {
+    padding: $padding;
+    transition: padding .3s ease;
+}
+
+@import 'header';
+@import 'main';
+@import 'responsive';

@@ -1,0 +1,25 @@
+.header-welcome {
+    padding-top: 3rem;
+
+    .title,
+    .subtitle {
+        span {
+            display: block;
+        }
+    }
+
+    .title {
+        font-weight: 300;
+    }
+}
+
+@mixin header-welcome-max-768 {
+    .header-welcome {
+        .title,
+        .subtitle {
+            span {
+                display: inline;
+            }
+        }
+    }
+}

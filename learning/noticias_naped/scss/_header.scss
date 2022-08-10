@@ -1,0 +1,110 @@
+.header {
+    position: relative;
+    @include display-flex-wrap-center;
+
+    user-select: none;
+
+    .title {
+        margin-right: auto;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $purple-light;
+    }
+
+    .menu {
+        display: none;
+
+        padding: 1rem;
+        cursor: pointer;
+        transition: color .2s ease;
+
+        &:hover {
+            color: $purple-light;
+        }
+    }
+
+    .navigation {
+        @include display-flex-wrap-center;
+        padding: 1rem 0;
+    }
+
+    .link {
+        margin: 0 1.25rem;
+        padding: 3.5px 0;
+        border: 2px solid $dark;
+
+        &:hover {
+            color: $white;
+            border-bottom-color: $purple-light;
+        }
+    }
+
+    .button {
+        padding: 3.5px 14px;
+        text-align: center;
+        font-family: $lexend;
+        color: $white;
+        border-radius: 20px;
+        border: 2px solid $purple-light;
+
+        transition: background-color .2s ease;
+
+        &:hover {
+            background-color: $purple-light;
+        }
+    }
+}
+
+@mixin header-max-768 {
+    .header {
+        &.show {
+            .navigation {
+                display: flex;
+                z-index: 1049;
+                opacity: 1;
+            }
+        }
+
+        .menu {
+            display: block;
+            float: right;
+            z-index: 1051;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: none;
+            flex-direction: column;
+
+            padding: 0;
+            min-width: 120px;
+            max-width: 100%;
+            border: 2px solid $purple-light;
+            border-radius: 20px 0 20px 20px;
+            background-color: $dark;
+            opacity: 0;
+            z-index: -1050;
+
+            overflow: hidden;
+            transition: opacity .3s ease;
+        }
+
+        .link {
+            margin: 0;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
+            border: none;
+
+            &:hover {
+                background-color: $purple-light;
+            }
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.header-banners {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem 0;
+
+    .column-left {
+        width: 70%;
+        margin-right: 7px;
+    }
+
+    .column-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        width: 33.5%;
+        margin-left: 7px;
+        font-size: x-small;
+
+        .title {
+            top: .5rem;
+            left: .5rem;
+        }
+
+        .description {
+            padding: .5rem;
+        }
+    }
+
+    .figure,
+    .image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .figure {
+        position: relative;
+
+        cursor: pointer;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+
+            background: $gradient-vertical;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .title {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+
+        padding: 3.5px 7px;
+        font-size: x-small;
+        font-family: $lexend;
+        color: $white;
+        border-radius: 5px;
+        background-color: $purple-light;
+    }
+
+    .description {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        padding: 1rem;
+    }
+}
+
+@mixin header-banners-max-768 {
+    .header-banners {
+        .column-left {
+            margin: 0;
+            width: 100%;
+        }
+
+        .column-right {
+            display: none;
+        }
+
+        .image {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+
+            width: unset;
+            height: 100%;
+        }
+    }
+}

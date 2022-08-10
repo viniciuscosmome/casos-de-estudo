@@ -1,0 +1,55 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $inter;
+}
+
+body {
+    color: $white-200;
+    background-color: $dark;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: $white;
+    font-family: $lexend;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: $gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $purple-light;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: auto;
+    padding: $padding;
+    max-width: 1200px;
+}
+
+@import 'header';
+@import 'header-welcome';
+@import 'header-banners';
+@import 'section-posts';
+@import 'breaking-news';
+@import 'footer';
+
+@import 'responsive';

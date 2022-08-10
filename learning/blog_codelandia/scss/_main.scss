@@ -1,0 +1,46 @@
+.main {
+    .section {
+        @include display_flex_wrap;
+        justify-content: space-between;
+
+        margin: 1rem 0 2rem;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: $white;
+        box-shadow: $box_shadow_sm;
+
+        cursor: pointer;
+        transition: box-shadow .3s ease;
+
+        &:hover {
+            box-shadow: $box_shadow;
+        }
+
+        .date {
+            font-size: small;
+            color: $gray;
+        }
+
+        .like {
+            cursor: pointer;
+            font-size: large;
+            color: $purple;
+        }
+
+        .title,
+        .paragraph {
+            margin: .5rem 0;
+            font-weight: 500;
+        }
+
+        .title {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        .paragraph {
+            color: $gray;
+            font-weight: 400;
+        }
+    }
+}

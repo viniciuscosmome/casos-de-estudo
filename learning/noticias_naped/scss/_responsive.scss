@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+    @include variables-max-1200;
+}
+
+@media (max-width: 968px) {
+    @include breaking-news-max-968;
+}
+
+@media (max-width: 768px) {
+    @include variables-max-768;
+    @include header-max-768;
+    @include header-welcome-max-768;
+    @include header-banners-max-768;
+    @include section-posts-max-768;
+}
+
+@media (max-width: 568px) {
+    @include breaking-news-max-568;
+}

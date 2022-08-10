@@ -1,14 +1,32 @@
-# DESAFIOS
-### Listarei os links para cada desafio que finalizo
+# Casos de estudo
+
+Templates desenvolvidos para praticar meus conhecimentos com HTML, CSS e JavaScript.
+
+Os designers que elaboraram os temas serão creditados abaixo, junto com os créditos dos arquivos externos de ícones e fontes de texto.
+
 <br />
 
-> criador dos desafios: <a href="https://github.com/iuricode">@iuricode</a><br />
-> pasta dos desafios: desafios/iuricode
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_01/">Desafio 01 - blog codelândia</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_02/">Desafio 02 - loja JordanShoes</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_03/">Desafio 03 - loja comum</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_04/">Desafio 04 - tela de login</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_05/">Desafio 05 - a viagem de Chihiro</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_06/">Desafio 06 - LOKI</a>
-* <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_07/">Desafio 07 - Valorant</a>
-<!-- * <a href="https://viniciuscosmome.github.io/desafios/desafios/iuricode/desafio_11/">Desafio 11 - Jogo da Memória</a> -->
+# Blog Codelândia
+>![Blog Codelândia](assets/images/blog_codelandia.png)
+
+[Acessar visualização]()
+
+[Acessar código fonte]()
+
+<hr />
+
+## Créditos
+<table>
+    <tr>
+        <th>Designer dos temas</th>
+        <th>Ícone</th>
+        <th>Fontes</th>
+    </tr>
+    <tr>
+        <td>iuricode</td>
+        <td>Bootstrap Icons</td>
+        <td>Google Fonts</td>
+    </tr>
+</table>
+<br />
+<br />

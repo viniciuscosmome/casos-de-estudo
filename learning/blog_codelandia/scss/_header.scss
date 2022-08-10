@@ -1,0 +1,84 @@
+.header {
+    @include display_flex_wrap;
+    justify-content: space-between;
+
+    color: $white_200;
+    background-color: $purple;
+    background-image: $gradient;
+
+    .title,
+    .navigation {
+        width: 50%;
+        margin-bottom: .75rem;
+    }
+
+    .navigation {
+        text-align: right;
+
+        .link {
+            transition: color .2s ease;
+        }
+
+        .link:hover {
+            color: $gray_300;
+        }
+    }
+
+    .form {
+        display: flex;
+
+        width: 100%;
+        margin-top: .75rem;
+
+        border-radius: 3px;
+        background-color: rgba($white_200, .3);
+
+        .button,
+        .input {
+            padding: 10px 7px;
+            color: $white_200;
+            border: none;
+            background: none;
+
+            transition:
+                width .2s ease,
+                background-color .2s ease;
+        }
+
+        .button {
+            width: 10%;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgba($purple, .4);
+        }
+
+        .input {
+            width: 90%;
+            font-family: $inter;
+            color: $white_200;
+        }
+
+        .input::placeholder {
+            font-family: inherit;
+            font-weight: 500;
+            color: rgba($white_200, .7);
+        }
+    }
+}
+
+// Responsive
+@mixin header_max_width_568 {
+    .header {
+        .form {
+            .button {
+                width: 20%;
+            }
+
+            .input {
+                width: 80%;
+            }
+        }
+    }
+}
