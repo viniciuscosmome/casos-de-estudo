@@ -5,12 +5,19 @@
             "extensionName": ".css",
             "savePath": "~/../css",
             "savePathReplacementPairs": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css",
+            "savePathReplacementPairs": null
         }
     ],
     "liveSassCompile.settings.excludeList": [
         "/**/node_modules/**",
         "/.vscode/**",
         "/_zip/**",
+        "/**/_old_files/**",
         "/assets/**",
         "/learning/_common/**",
         "/learning/blog_codelandia/**"

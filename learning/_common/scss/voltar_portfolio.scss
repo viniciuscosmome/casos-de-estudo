@@ -1,0 +1,48 @@
+$white:             #f4f4f4;
+$white_darken:      darken($white, 10);
+$black:             #0d0d11;
+$black_lighten:     lighten($black, 10);
+$blue:              #0f6ee8;
+$blue_lighten:      lighten($blue, 30);
+
+.___irparaportfolio {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100050;
+
+    margin: 1rem;
+    padding: 1rem;
+    max-width: calc(100% - 1rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: $white;
+    border-radius: 10px;
+    border: 2px solid $black_lighten;
+    background-color: $black;
+    box-shadow: 0 .5rem 1rem rgba($black, .15);
+    opacity: .4;
+
+    cursor: pointer;
+
+    &.___invert {
+        color: $black;
+        border-color: $white_darken;
+        background-color: $white;
+    }
+
+    &:hover {
+        color: $blue;
+        border-color: $blue;
+        background-color: $blue_lighten;
+        opacity: 1;
+    }
+
+    i {
+        margin-right: 4px;
+    }
+}
