@@ -1,0 +1,256 @@
+.header {
+    @include display-flex-center;
+    justify-content: space-between;
+
+    &_form {
+        @include display-flex-center-center;
+
+        margin: 0 2rem;
+        padding: 0;
+        max-width: 700px;
+        width: 50%;
+        border-radius: 3px;
+        background-color: $white-200;
+
+        .input {
+            padding: .7rem;
+            width: 100%;
+        }
+
+        .submit {
+            padding: .7rem;
+            width: 20%;
+            color: $gray;
+
+            transition:
+                color .25s ease,
+                background-color .25s ease;
+        }
+
+        .submit:hover {
+            color: $white;
+            background-color: $black;
+        }
+    }
+}
+
+.welcome {
+    @include display-flex-center;
+    justify-content: space-between;
+
+    padding: 4rem 0 2rem;
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .subtitle {
+        padding: 1.5rem 0;
+        color: $gray;
+    }
+
+    .counter {
+        @include display-flex-center;
+        gap: 2rem;
+
+        padding: 1.5rem 0;
+    }
+
+    .view {
+        text-align: center;
+
+        .number {
+            font-size: 1.3rem;
+        }
+
+        .text {
+            color: $gray;
+        }
+    }
+
+    .figure {
+        padding: 2rem 0 2rem 2rem;
+    }
+}
+
+.collections {
+    @include display-flex-center;
+    justify-content: space-around;
+
+    padding: 2rem 0;
+
+    .grid {
+        @include display-flex-center;
+        gap: .5rem;
+
+        width: 70%;
+    }
+
+    .image {
+        max-width: calc((100% - 1rem) / 3);
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .more {
+        padding: 2rem 0 2rem 2rem;
+    }
+}
+
+.artists {
+    @include display-flex-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 2rem 0;
+
+    .section-title,
+    .column {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-bottom: 1rem;
+    }
+
+    .section-column {
+        @include display-flex-center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .figure {
+        position: relative;
+        width: calc((100% - 1rem) / 3);
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .description {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: $white;
+    }
+}
+
+.footer {
+    @include display-flex-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 2rem;
+
+    .navigation {
+        @include display-flex-center-center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .link {
+        padding: .5rem;
+        text-transform: uppercase;
+        font-size: 14px;
+        white-space: nowrap;
+
+        transition: color .25s ease;
+
+        &:hover {
+            color: $gray;
+        }
+    }
+}
+
+// Responsive
+@mixin home-min-1400 {
+    .column {
+        max-width: 500px;
+    }
+
+    .welcome {
+        .figure {
+            margin: auto;
+        }
+    }
+
+    .collections {
+        .more {
+            margin: auto;
+        }
+    }
+}
+
+@mixin home-max-768 {
+    .column {
+        width: 100%;
+    }
+
+    .welcome {
+        padding: 2rem 0 1rem;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            padding: 1rem 0;
+        }
+
+        .counter {
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+
+    .collections {
+        flex-direction: column;
+        padding: 1rem 0;
+
+        .grid {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .image {
+            max-width: 100%;
+        }
+
+        .more {
+            padding: 2rem 0;
+        }
+    }
+
+    .artists {
+        padding: 1rem 0;
+
+        .section-column {
+            flex-direction: column;
+        }
+
+        .figure {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        padding-top: 1rem;
+
+        .title {
+            width: 100%;
+        }
+
+        .navigation {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .link {
+            font-size: 12px;
+        }
+    }
+}

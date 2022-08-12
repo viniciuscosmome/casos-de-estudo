@@ -1,0 +1,37 @@
+.button {
+    padding: .7rem;
+    max-width: 100%;
+    width: 188px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 3px;
+    border: 3px solid $blue;
+    background-color: $blue;
+    cursor: pointer;
+    transition:
+        background-color .25s ease,
+        padding .25s ease,
+        width .25s ease;
+
+    &:hover {
+        color: $blue;
+        background-color: transparent;
+    }
+}
+
+// Responsive
+@mixin button-max-768 {
+    .button {
+        padding: .5rem;
+    }
+
+    .button:not(.button-sm-normal) {
+        width: 100%;
+    }
+
+    .button.button-sm-normal {
+        width: 135px;
+    }
+}
