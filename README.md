@@ -12,8 +12,8 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 ### Navegar pelo README.md
 * [Blog Codelândia](#blog-codelândia)
 * [Notícias Naped](#notícias-naped)
+* [Website Art.](#website-art)
 <br /><br />
-
 
 # Blog Codelândia
 >[![Blog Codelândia](assets/images/blog_codelandia.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/blog_codelandia/)
@@ -39,6 +39,28 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 
 # Notícias Naped
 >[![Notícias Naped](assets/images/noticias_naped.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/noticias_naped/)
+<sup align=center>Clique na imagem acima para visualizar o template na web</sup>
+
+<table align=center>
+    <thead>
+        <tr>
+            <th>Designer do tema</th>
+            <th>Ícones</th>
+            <th>Fontes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iuricode</td>
+            <td>Bootstrap Icons</td>
+            <td>Google Fonts</td>
+        </tr>
+    </tbody>
+</table>
+<br /><br />
+
+# Website Art.
+>[![Website Art](assets/images/website_art.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/website_art/)
 <sup align=center>Clique na imagem acima para visualizar o template na web</sup>
 
 <table align=center>

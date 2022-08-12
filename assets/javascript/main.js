@@ -8,6 +8,11 @@ const project_list = [
         title: 'Notícias Naped',
         image_name: 'noticias_naped',
         project_folder: 'noticias_naped'
+    },
+    {
+        title: 'Website Art.',
+        image_name: 'website_art',
+        project_folder: 'website_art'
     }
 ];
 
