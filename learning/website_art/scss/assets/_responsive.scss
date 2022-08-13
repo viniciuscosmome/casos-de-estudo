@@ -11,9 +11,6 @@
 
 }
 
-@media (max-width: 968px) {
-}
-
 @media (max-width: 768px) {
     @include globals-max-768;
     @include button-max-768;
