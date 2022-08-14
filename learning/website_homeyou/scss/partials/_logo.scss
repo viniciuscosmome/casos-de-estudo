@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    .image {
+        width: 2rem;
+        height: fit-content;
+    }
+
+    .details {
+        padding: 0 .5rem;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+}
+
+// Responsive
+@mixin logo-max-368 {
+    .logo {
+        .title {
+            font-size: 1rem;
+        }
+    }
+}

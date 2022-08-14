@@ -1,0 +1,45 @@
+
+.button {
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    transition:
+        color .2s ease,
+        background-color .2s ease;
+
+    &:hover {
+        color: $white;
+        background-color: $gray;
+    }
+}
+
+.button-icon {
+    font-size: 1.3rem;
+}
+
+.button-decoration {
+    text-decoration: underline;
+}
+
+.button-dark {
+    color: $white-200;
+    border-color: $dark;
+    background-color: $dark;
+}
+
+.button-outline {
+    color: $dark;
+    border-color: $dark;
+    background-color: $white;
+}
+
+.button-large {
+    width: 100%;
+}
+
+// Responsive
+@mixin button-max-768 {
+    .button-sm-large {
+        width: 100%;
+    }
+}

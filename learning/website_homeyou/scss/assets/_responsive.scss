@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+    @include variables-max-1200;
+}
+
+@media (max-width: 768px) {
+    @include globals-max-768;
+    @include variables-max-768;
+
+    @include button-max-768;
+
+    @include home-max-768;
+}
+
+@media (max-width: 368px) {
+    @include logo-max-368;
+}

@@ -23,6 +23,7 @@
         "/learning/blog_codelandia/**",
         "/learning/noticias_naped/**",
         "/learning/website_art/**",
+        "/learning/website_homeyou/**",
     ],
     "liveSassCompile.settings.generateMap": false
 }

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --padding: 1rem 20%;
+}
+
+$padding: var(--padding);
+
+$montserrat:        'Montserrat', sans-serif;
+
+$white:             #ffffff;
+$white-200:         #f9f9f9;
+$gray:              #797979;
+$dark:              #272727;
+$black:             #0d0d11;
+
+$box-shadow:            0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm:         0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg:         0 1rem 3rem rgba($black, .175);
+
+// Responsive
+@mixin variables-max-1200 {
+    :root {
+        --padding: 1rem 10%;
+    }
+}
+
+@mixin variables-max-768 {
+    :root {
+        --padding: 1rem;
+    }
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $montserrat;
+    font-weight: 500;
+    color: $black;
+}
+
+body {
+    padding: $padding;
+    background-color: $white;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+button {
+    border: 2px solid transparent;
+    background: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.contain {
+    margin: auto;
+    max-width: 1440px;
+}
+
+img,
+.image {
+    width: 100%;
+}
+
+// Responsive
+@mixin globals-max-768 {
+    .sm-hidden {
+        display: none;
+    }
+}

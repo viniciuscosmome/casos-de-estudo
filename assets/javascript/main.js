@@ -10,9 +10,14 @@ const project_list = [
         project_folder: 'noticias_naped'
     },
     {
-        title: 'Website Art.',
+        title: 'Art.',
         image_name: 'website_art',
         project_folder: 'website_art'
+    },
+    {
+        title: 'HOMEYOU',
+        image_name: 'website_homeyou',
+        project_folder: 'website_homeyou'
     }
 ];
 
