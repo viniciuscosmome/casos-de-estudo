@@ -2,7 +2,7 @@
 
 Templates desenvolvidos para praticar meus conhecimentos com HTML, CSS e JavaScript.
 
-Os designers que elaboraram os temas serão creditados abaixo, junto com os créditos dos arquivos externos de ícones e fontes de texto.
+Os designers que elaboraram os temas serão creditados abaixo, junto com os créditos dos arquivos externos e o link para acessar o diretório do projeto referente.
 <br /><br />
 
 ### Veja todos os projetos em:
@@ -19,6 +19,8 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 # Blog Codelândia
 >[![Blog Codelândia](assets/images/blog_codelandia.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/blog_codelandia/)
 <sup  align=center>Clique na imagem acima para visualizar o template na web</sup>
+
+[Ver repositório Blog Codelândia](https://github.com/viniciuscosmome/casos-de-estudo/tree/master/learning/blog_codelandia)
 
 <table align=center>
     <thead>
@@ -42,6 +44,8 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 >[![Notícias Naped](assets/images/noticias_naped.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/noticias_naped/)
 <sup align=center>Clique na imagem acima para visualizar o template na web</sup>
 
+[Ver repositório Notícias Naped](https://github.com/viniciuscosmome/casos-de-estudo/tree/master/learning/noticias_naped)
+
 <table align=center>
     <thead>
         <tr>
@@ -64,6 +68,8 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 >[![Art](assets/images/website_art.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/website_art/)
 <sup align=center>Clique na imagem acima para visualizar o template na web</sup>
 
+[Ver repositório Art.](https://github.com/viniciuscosmome/casos-de-estudo/tree/master/learning/website_art)
+
 <table align=center>
     <thead>
         <tr>
@@ -85,6 +91,8 @@ Os designers que elaboraram os temas serão creditados abaixo, junto com os cré
 # HOMEYOU
 >[![HOMEYOU](assets/images/website_homeyou.png)](https://viniciuscosmome.github.io/casos-de-estudo/learning/website_homeyou/)
 <sup align=center>Clique na imagem acima para visualizar o template na web</sup>
+
+[Ver repositório HOMEYOU.](https://github.com/viniciuscosmome/casos-de-estudo/tree/master/learning/website_homeyou)
 
 <table align=center>
     <thead>
