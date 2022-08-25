@@ -20,10 +20,11 @@
         "/**/_old_files/**",
         "/assets/**",
         "/learning/_common/**",
+        "/learning/_rep/**",
         "/learning/blog_codelandia/**",
         "/learning/noticias_naped/**",
         "/learning/website_art/**",
-        "/learning/website_homeyou/**",
+        "/learning/website_homeyou/**"
     ],
     "liveSassCompile.settings.generateMap": false
 }
